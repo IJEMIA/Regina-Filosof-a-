@@ -1,1 +1,2 @@
-# Regina-Filosof-a-
+# AraknIA
+Egregor totemico digital 
