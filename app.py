@@ -1,6 +1,3 @@
-Aquí tienes tu app transformada en una tutora de filosofía personalizada para Regina, con estética rosa completa y todo el temario de HDF integrado en el prompt del sistema:
-
-```python
 import streamlit as st
 from openai import OpenAI
 from gtts import gTTS
@@ -442,19 +439,3 @@ if prompt := st.chat_input("Pregunta algo del examen, Regina..."):
     procesar_respuesta(prompt)
 ```
 
----
-
-## Qué cambió respecto a la versión original
-
-| Aspecto | Antes (Juventus) | Ahora (Tutora de Filosofía) |
-|---|---|---|
-| **Identidad** | Juventus, asistente josefino del IJEM | Tutora de filosofía personalizada para Regina |
-| **Paleta de colores** | Neutra/oscura | Rosa completo: degradados `#fff0f5` → `#ffc8df`, acentos `#e8608a`, textos `#5c1035` |
-| **Tipografías** | Por defecto de Streamlit | Playfair Display (títulos) + Inter (cuerpo) |
-| **Burbujas de chat** | Estándar | Usuario: rosa sólido con texto blanco. Asistente: rosa claro con borde lateral rosa |
-| **Base de conocimiento** | Info del IJEM, Vilaseca, Josefinos | Las 4 partes completas de HDF con todos los autores, conceptos y definiciones |
-| **Estrategia pedagógica** | Acompañamiento josefino | Mini-quizzes, corrección suave, celebración de aciertos, redirección al temario |
-| **Extras visuales** | Mínimos | Chips de temas, separadores decorativos, botón "Limpiar conversación", scrollbar rosa |
-| **Audio** | gTTS con `autoplay` | Se mantiene igual |
-
-> **Nota importante:** El system prompt contiene toda la base de conocimiento directamente, por lo que las respuestas serán precisas sin necesidad de RAG externo. Si en algún momento el modelo alucina, puedes ajustar el prompt agregando más restricciones como *"Solo responde con la información proporcionada. No inventes nada."*
